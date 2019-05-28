@@ -1,0 +1,19 @@
+﻿@using Data
+@model Candidate
+@{
+    ViewData["Title"] = "ViewDetails";
+}
+
+<h2>ViewDetails</h2>
+
+<h4>@Model.Name</h4>
+<h4>@Model.Number</h4>
+<h4>@Model.Email</h4>
+<h4>@Model.Notes</h4>
+
+<input type="hidden" id="candidateId" value="@Model.Id"/>
+
+<button id="confirm-btn">Confirm</button>
+<button id="decline-btn">Decline</button>
+
+

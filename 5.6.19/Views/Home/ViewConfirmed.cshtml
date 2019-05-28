@@ -1,0 +1,25 @@
+﻿@using Data
+@model IEnumerable<Candidate>
+@{
+    ViewData["Title"] = "ViewConfirmed";
+}
+
+<h2>ViewConfirmed</h2>
+
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Number</th>
+        <th>Email</th>
+        <th>Notes</th>
+    </tr>
+    @foreach (Candidate c in Model)
+    {
+        <tr>
+            <td>@c.Name</td>
+            <td>@c.Number</td>
+            <td>@c.Email</td>
+            <td>@c.Notes</td>
+        </tr>
+    }
+</table>

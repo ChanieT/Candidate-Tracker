@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewData["Title"] = "AddCandidate";
+}
+
+<h2>Add another candidate</h2>
+
+<form method="post" action="/home/submit">
+<input class="form-control" type="text" name="name" placeholder="Name" />
+<input class="form-control" type="text" name="number" placeholder="Phone Number" />
+<input class="form-control" type="text" name="email" placeholder="Email Address" />
+    <textarea class="form-control" name="notes" placeholder="Take notes here"></textarea>
+
+    <button class="btn btn-primary">Submit Candidate</button>
+</form>
+
